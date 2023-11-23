@@ -4091,3 +4091,8 @@ textarea.form-control {
 .rounded-btn {
   color: white !important;
 }
+.offcanvas-body li {
+  color: white;
+  list-style: none;
+  padding: 20px;
+}

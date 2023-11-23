@@ -1520,3 +1520,14 @@
     padding-left: 30px !important;
   }
 } /*# sourceMappingURL=responsive.css.map */
+@media only screen and (max-width: 990px) {
+  .others-options {
+    display: none;
+  }
+  .navbar .col-lg-3 {
+    width: 210px;
+  }
+  .navbar .navbar-toggler .burger-menu span {
+    background-color: #fff;
+  }
+}
