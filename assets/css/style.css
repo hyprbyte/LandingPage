@@ -3840,8 +3840,8 @@ textarea.form-control {
   right: -74px;
 }
 .swiper-controller.style-two .controller-icon {
-  border-color: var(--headingColor);
-  color: var(--headingColor);
+  border-color: #fff;
+  color: #fff;
 }
 .swiper-controller.style-two .controller-icon:hover {
   background-color: var(--headingColor);
