@@ -1,0 +1,137 @@
+@font-face {
+    font-family: "flaticon_mycollection";
+    src: url("../fonts/flaticon_mycollection.ttf?255caa3bc41f775f65539be9858b28d5") format("truetype"),
+url("../fonts/flaticon_mycollection.woff?255caa3bc41f775f65539be9858b28d5") format("woff"),
+url("../fonts/flaticon_mycollection.woff2?255caa3bc41f775f65539be9858b28d5") format("woff2"),
+url("../fonts/flaticon_mycollection.eot?255caa3bc41f775f65539be9858b28d5#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_mycollection.svg?255caa3bc41f775f65539be9858b28d5#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-bookmark-white:before {
+    content: "\f101";
+}
+.flaticon-phone-call:before {
+    content: "\f102";
+}
+.flaticon-right-quote:before {
+    content: "\f103";
+}
+.flaticon-user:before {
+    content: "\f104";
+}
+.flaticon-up-arrow:before {
+    content: "\f105";
+}
+.flaticon-volume:before {
+    content: "\f106";
+}
+.flaticon-twitter:before {
+    content: "\f107";
+}
+.flaticon-user-1:before {
+    content: "\f108";
+}
+.flaticon-star:before {
+    content: "\f109";
+}
+.flaticon-car-wash:before {
+    content: "\f10a";
+}
+.flaticon-logout:before {
+    content: "\f10b";
+}
+.flaticon-motorcycle:before {
+    content: "\f10c";
+}
+.flaticon-location:before {
+    content: "\f10d";
+}
+.flaticon-wiper:before {
+    content: "\f10e";
+}
+.flaticon-shopping-cart:before {
+    content: "\f10f";
+}
+.flaticon-star-1:before {
+    content: "\f110";
+}
+.flaticon-envelope:before {
+    content: "\f111";
+}
+.flaticon-linkedin:before {
+    content: "\f112";
+}
+.flaticon-car-wash-1:before {
+    content: "\f113";
+}
+.flaticon-star-2:before {
+    content: "\f114";
+}
+.flaticon-message:before {
+    content: "\f115";
+}
+.flaticon-back:before {
+    content: "\f116";
+}
+.flaticon-next:before {
+    content: "\f117";
+}
+.flaticon-facebook:before {
+    content: "\f118";
+}
+.flaticon-comment:before {
+    content: "\f119";
+}
+.flaticon-calendar:before {
+    content: "\f11a";
+}
+.flaticon-car-wash-2:before {
+    content: "\f11b";
+}
+.flaticon-down:before {
+    content: "\f11c";
+}
+.flaticon-settings:before {
+    content: "\f11d";
+}
+.flaticon-car-wash-3:before {
+    content: "\f11e";
+}
+.flaticon-rocket-launch:before {
+    content: "\f11f";
+}
+.flaticon-car-wash-4:before {
+    content: "\f120";
+}
+.flaticon-right-up:before {
+    content: "\f121";
+}
+.flaticon-happy-client:before {
+    content: "\f122";
+}
+.flaticon-arrow-down:before {
+    content: "\f123";
+}
+.flaticon-tire:before {
+    content: "\f124";
+}
+.flaticon-polish:before {
+    content: "\f125";
+}
+.flaticon-power-washing:before {
+    content: "\f126";
+}
+.flaticon-tire-1:before {
+    content: "\f127";
+}
