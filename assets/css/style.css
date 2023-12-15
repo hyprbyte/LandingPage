@@ -495,13 +495,14 @@ textarea.form-control {
 }
 
 .banner video {
-  max-width: 100%;
+  width: 100%;
   padding-left: 0% !important;
   padding-right: 0% !important;
   object-fit: cover;
   filter: brightness(0.2);
   background-size: cover;
   min-height: 121vh;
+  margin-top: -75px;
 }
 .banner-content {
   position: absolute;
