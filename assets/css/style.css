@@ -1252,6 +1252,10 @@ textarea.form-control {
 .pricing-single-item-two {
   border: 1px solid var(--headingColor);
   padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .pricing-single-item-two h3 {
   font-size: 48px;
@@ -4096,4 +4100,17 @@ textarea.form-control {
   color: white;
   list-style: none;
   padding: 20px;
+}
+
+.title {
+  color: black;
+  margin-bottom: 5px;
+}
+.ttitle {
+  color: white;
+  margin-bottom: 5px;
+}
+
+.readmorebtn {
+  width: 50%;
 }

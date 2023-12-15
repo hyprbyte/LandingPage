@@ -432,3 +432,9 @@ try {
     }
   })();
 } catch (err) {}
+
+function subscribeNow(event) {
+  event.preventDefault();
+  console.log("subscribeNow function called");
+  window.location.href = "under construction.html";
+}
