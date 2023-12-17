@@ -862,6 +862,7 @@
   }
   .swiper-controller {
     margin-bottom: 30px;
+    display: flex;
   }
   .swiper-controller .controller-icon {
     margin-left: 0;
