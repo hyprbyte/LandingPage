@@ -93,6 +93,7 @@
   }
   .banner-content {
     margin-top: 0;
+    height: 57vh;
   }
   .banner-content h1 {
     font-size: 4rem !important;
@@ -154,7 +155,7 @@
   }
   .section-title h2:last-child {
     margin-bottom: 0;
-    font-size: 68px;
+    font-size: 46px;
   }
 
   .swiper-controller.style-two .controller-icon {
@@ -194,7 +195,7 @@
 
   .section-title.white-title h2 {
     color: #fff4d7;
-    font-size: 62px;
+    font-size: 46px;
   }
   .our-services-item h3 {
     font-size: 20px;

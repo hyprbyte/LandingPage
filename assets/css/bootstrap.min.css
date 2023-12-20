@@ -8242,8 +8242,10 @@ fieldset:disabled .btn {
 }
 .text-center {
   /* text-align: center !important; */
-  margin-bottom: 34px;
-  margin-left: 88px;
+  /* margin-bottom: 34px;
+  margin-left: 88px; */
+  display: flex;
+    justify-content: center;
 }
 .text-decoration-none {
   text-decoration: none !important;

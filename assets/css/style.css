@@ -817,7 +817,7 @@ textarea.form-control {
 }
 .our-services-item {
   border: 3px solid #262113;
-  padding: 30px 50px;
+  padding: 30px 61px;
   border-radius: 100px;
   transition: var(--transition);
   margin-bottom: 50px;
@@ -845,8 +845,8 @@ textarea.form-control {
   transition: var(--transition);
 }
 .our-services-item:hover {
-  margin-left: -54px;
-  margin-right: 140px;
+  margin-left: -63px;
+  margin-right: 74px;
   background-color: var(--mainColor);
 }
 .our-services-item:hover h3 {
