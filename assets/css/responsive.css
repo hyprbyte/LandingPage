@@ -148,7 +148,24 @@
     font-size: 30px;
   }
   .about-img {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+
+    margin: 0px 0px 17px 0px;
+  }
+  .section-title h2:last-child {
+    margin-bottom: 0;
+    font-size: 68px;
+  }
+
+  .swiper-controller.style-two .controller-icon {
+    border-color: #fff;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  .rim-pic {
+    width: 127px;
+    height: 127px;
   }
   .about-us-sub-dis {
     margin-top: 30px;
@@ -173,6 +190,11 @@
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 30px;
+  }
+
+  .section-title.white-title h2 {
+    color: #fff4d7;
+    font-size: 62px;
   }
   .our-services-item h3 {
     font-size: 20px;
@@ -810,17 +832,28 @@
   .about-us-sub-dis {
     margin-top: 30px;
   }
+  .text-center {
+    text-align: center !important;
+  }
   .about-us-sub-dis p {
     font-size: 20px;
     line-height: 40px;
+    text-align: center;
   }
   .section-title {
     margin-bottom: 30px;
+  }
+  .section-title.white-title h2 {
+    color: #fff4d7;
+    font-size: 81px;
   }
   .section-title h2 {
     font-size: 40px;
     line-height: normal;
     letter-spacing: 1px;
+  }
+  .section-title h2:last-child {
+    font-size: 80px;
   }
   .our-services-item {
     padding: 20px;

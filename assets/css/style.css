@@ -94,9 +94,9 @@ img {
 textarea.form-control {
   height: auto;
 }
-.ptb-150 {
-  padding-top: 150px;
-  padding-bottom: 150px;
+.pt-57 {
+  padding-top: 57px;
+  /* padding-bottom: 150px; */
 }
 .pt-150 {
   padding-top: 150px;
@@ -298,8 +298,11 @@ textarea.form-control {
   font-size: 16px;
 }
 .section-title {
+  display: flex;
   max-width: 1140px;
   margin: -16px auto 70px;
+  justify-content: center;
+  padding-top: 20px;
 }
 .section-title h2 {
   font-size: 100px;
@@ -313,6 +316,7 @@ textarea.form-control {
 }
 .section-title h2:last-child {
   margin-bottom: 0;
+  font-size: 88px;
 }
 .section-title h3 {
   letter-spacing: -0.54px;
@@ -326,13 +330,13 @@ textarea.form-control {
 }
 .section-title.white-title h2 {
   color: #fff4d7;
+  font-size: 91px;
 }
 .section-title.white-title p {
   color: #fff4d7;
 }
 .section-title.left-title {
-  margin-left: 0;
-  text-align: left;
+  padding-top: 10px;
 }
 .section-title.mw-860 {
   max-width: 860px;
@@ -614,7 +618,7 @@ textarea.form-control {
   font-family: var(--bodyFontFamily);
   font-weight: 700;
   letter-spacing: 0.83px;
-  font-size: 9rem;
+  font-size: 8rem;
   line-height: 1;
 }
 .banner-content.style-two h1 .marks {
@@ -687,7 +691,7 @@ textarea.form-control {
 }
 .about-us-content h2 {
   letter-spacing: -2.5px;
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 800;
 }
 .about-us-content p {
@@ -705,7 +709,7 @@ textarea.form-control {
   margin-bottom: 50px;
 }
 .about-us-sub-dis p {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 600;
   line-height: 50px;
   font-family: var(--headingFontFamily);
@@ -4111,9 +4115,9 @@ textarea.form-control {
   margin-bottom: 5px;
 }
 
-.readmorebtn {
+/* .readmorebtn {
   width: 50%;
-}
+} */
 
 /* FAQ */
 
@@ -4221,4 +4225,29 @@ h1 {
   margin-left: 860px;
   position: absolute;
   margin-top: 42px;
+}
+
+.rim-pic {
+  width: 180px;
+  height: 180px;
+}
+
+.top-footer-items {
+  width: max-content;
+}
+
+.aboutush2 {
+  font-size: 85px;
+}
+
+.your-services-area {
+  background: #1b1f22;
+}
+
+.your-satisfaction {
+  color: #adb5bd;
+}
+
+.navbar-nav {
+  margin-left: 208px;
 }
