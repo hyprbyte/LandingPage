@@ -7748,6 +7748,7 @@ fieldset:disabled .btn {
 }
 .align-items-center {
   align-items: center !important;
+  margin-bottom: 125px;
 }
 .align-items-baseline {
   align-items: baseline !important;
@@ -8245,7 +8246,7 @@ fieldset:disabled .btn {
   /* margin-bottom: 34px;
   margin-left: 88px; */
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 .text-decoration-none {
   text-decoration: none !important;
