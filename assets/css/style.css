@@ -316,7 +316,7 @@ textarea.form-control {
 }
 .section-title h2:last-child {
   margin-bottom: 0;
-  font-size: 88px;
+  font-size: 75px;
 }
 .section-title h3 {
   letter-spacing: -0.54px;
@@ -330,7 +330,7 @@ textarea.form-control {
 }
 .section-title.white-title h2 {
   color: #fff4d7;
-  font-size: 91px;
+  font-size: 75px;
 }
 .section-title.white-title p {
   color: #fff4d7;
@@ -4250,4 +4250,8 @@ h1 {
 
 .navbar-nav {
   margin-left: 208px;
+}
+
+.rim-container {
+  padding-bottom: 20px;
 }

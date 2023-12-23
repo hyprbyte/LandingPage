@@ -1,26 +1,42 @@
 
 
 
+
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Collect form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
 
-    // Set up email parameters
-    $to = 'surya.rawcleaners@gmail.com'; // Replace with your email address
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+$name = $_POST["name"];
+$email = $_POST["email"];
+$subject = $_POST["subject"];
+$message = $_POST["message"];
 
-    // Send email
-    if (mail($to, 'Contact Form Submission', $message, $headers)) {
-        echo 'Message has been sent successfully!';
-    } else {
-        echo 'Error sending the message. Please try again later.';
-    }
-} else {
-    echo 'Invalid request method.';
-}
-?>
+require "vendor/autoload.php";
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+
+$mail = new PHPMailer(true);
+
+// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
+$mail->isSMTP();
+$mail->SMTPAuth = true;
+
+$mail->Host = "smtp.example.com";
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->Port = 587;
+
+$mail->Username = "surya.rawcleaners@gmail.com";
+$mail->Password = "fyhf ggjr jiye ymsc";
+
+$mail->setFrom($email, $name);
+$mail->addAddress("surya.rawcleaners@gmail.com", "Surya");
+
+$mail->Subject = $subject;
+$mail->Body = $message;
+
+$mail->send();
+
+header("Location: sent.html");
+
+
+// fyhf ggjr jiye ymsc
