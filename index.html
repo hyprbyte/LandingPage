@@ -10,16 +10,19 @@
 
     <!-- Links Of CSS File -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="assets/css/remixicon.css" />
     <link rel="stylesheet" href="assets/css/flaticon_mycollection.css" />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/scrollCue.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/toastr.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/dark-mode.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+
 
     <style>
       html {
@@ -33,6 +36,7 @@
     <title>Raw cleaners</title>
     
 </head>
+
   </head>
 
   <body>
@@ -1542,17 +1546,14 @@
           <div class="appointment-title">
             <h2>Now Book a Appointment</h2>
           </div>
-          <form
-            action="process-form.php"
-            method="post"
-            class="appointment-form"
-          >
+          <form  class="appointment-form">
             <div class="row">
               <div class="col-lg-9">
                 <div class="row">
                   <div class="col-lg-4">
                     <div class="form-group mb-30">
-                      <input
+                      <input 
+                      id="name"
                         type="text"
                         class="form-control"
                         placeholder="Your name"
@@ -1563,6 +1564,7 @@
                   <div class="col-lg-4">
                     <div class="form-group mb-30">
                       <input
+                      id="email"
                         type="text"
                         class="form-control"
                         placeholder="Your email"
@@ -1573,6 +1575,7 @@
                   <div class="col-lg-4">
                     <div class="form-group mb-30">
                       <input
+                      id="message"
                         type="text"
                         class="form-control"
                         placeholder="Message"
@@ -1583,16 +1586,13 @@
                 </div>
               </div>
               <div class="col-lg-3">
-                <button
-                  type="submit"
-                  class="default-btn active mb-30 w-100 d-flex align-items-center justify-content-center"
-                >
+                <button onclick="contactForm(event)" class="default-btn active mb-30 w-100 d-flex align-items-center justify-content-center">
                   <div class="d-flex align-items-center">
-                    Send Mail
-                    <i class="ri-arrow-right-up-line"></i>
+                      Send Mail
+                      <i class="ri-arrow-right-up-line"></i>
                   </div>
-                </button>
-              </div>
+              </button>
+            </div>
             </div>
           </form>
         </div>
@@ -1856,10 +1856,65 @@
     ></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/swiper-bundle.min.js"></script>
+
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/smoothscroll.min.js"></script>
+    <script  src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/toastr.min.js"></script>
     <script src="assets/js/custom.js"></script>
-  
+  <script>
+    var forms = document.querySelectorAll("form");
+      forms.forEach((form) => {
+    form.addEventListener("submit", preventDefaultForAllForms);
+  });
+      function contactForm(event) {
+        event.preventDefault();
+        console.log('contact works');
+    var name = document.getElementById("name").value;
+    var number = document.getElementById("email").value;
+    var date = document.getElementById("message").value;
+
+    if (name == "") {
+      toastr.error("Please enter your name");
+      valid = false;
+      return false;
+    } else if (email == "") {
+      toastr.error("Please enter your Mobile Number");
+      valid = false;
+      return false;
+    } else if (message == "") {
+      toastr.error("Choose Date");
+      valid = false;
+      return false;
+    } else {
+      sendmail(name, email, message);
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+    }
+
+    function sendmail(name, email, message) {
+      fetch("https://rawcleaners.in/process-form.php", {
+        method: "post",
+        headers: {
+          Accept: "application/josn",
+          "Content-Type": "application/json",
+        },
+        mode: "no-cors",
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+        }),
+      })
+        .then((res) => {
+          toastr.success("Thank You. We will get back to you shortly");
+        })
+        .catch((err) => toastr.error("please try again"));
+    }
+  }
+
+  </script>
   </body>
 </html>

@@ -511,6 +511,7 @@ textarea.form-control {
 .banner-content {
   position: absolute;
   text-align: -webkit-center;
+  padding: 0px 100px;
 }
 .banner-area {
   /* background-position: center center;
